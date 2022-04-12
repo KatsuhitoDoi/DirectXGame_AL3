@@ -20,17 +20,30 @@ class GameScene {
 	/// <summary>
 	/// コンストクラタ
 	/// </summary>
+	/// 
 	GameScene();
+
+	// テクスチャハンドル
+	uint32_t textureHandle_ = 0;
+
+	// スプライト
+	Sprite* sprite_ = nullptr;
+
 
 	/// <summary>
 	/// デストラクタ
 	/// </summary>
 	~GameScene();
 
+
+
 	/// <summary>
 	/// 初期化
 	/// </summary>
 	void Initialize();
+
+	
+
 
 	/// <summary>
 	/// 毎フレーム処理
